@@ -10,11 +10,16 @@ header {
     height: 40px;
 }
 
+.mobileMenu {
+    line-height: 0;
+}
+
 .mobileMenu .hamburger,
 .mobileMenu .closeMenu {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    line-height: 0;
 }
 
 .mobileMenu .hamburger img {
@@ -23,12 +28,11 @@ header {
 }
 
 .mobileMenu .closeMenu img {
-    width: 20px;
-    height: 20px;
+    height: 21px;
 }
 
 .mobileMenu .mobileMenuItems {
-    width: 66.67%;
+    width: 254px;
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -43,27 +47,24 @@ header {
 
 .mobileMenu .closeMenu {
     text-align: right;
-    padding: var(--spacing-400) var(--spacing-400) var(--spacing-400) 0;
+    padding: var(--spacing-400) var(--spacing-300) var(--spacing-400) 0;
 }
 
 .mobileMenu a {
-    font-size: var(--text-6);
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: var(--spacing-150);
+    line-height: normal;
+    margin-bottom: var(--spacing-400);
 }
 
 .mobileMenu a.active {
     border-right: 3px solid var(--white);
+    color: var(--white);
 }
 
 .mobileMenu a > span {
-    font-size: var(--text-6);
     font-weight: bold;
     width: 15px;
-}
-
-.mobileMenu a:not(:last-child) {
-    margin-bottom: var(--spacing-400);
 }

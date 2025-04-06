@@ -23,12 +23,12 @@ export default function Header({ deviceSize }) {
                         {menuOpen && (
                             <div className={styles.mobileMenuItems}>
                                 <button type='button' className={styles.closeMenu} onClick={toggleMenu}>
-                                    <img src="/shared/icon-close.svg" alt="Close" width={24} height={21} />
+                                    <img src="/shared/icon-close.svg" alt="Close" width={20} height={21} />
                                 </button>
-                                <NavLink className={({ isActive }) => (isActive ? styles.active : "") + " text-preset-8"} onClick={toggleMenu} to="/" end><span className='text-preset-8-bold'>00</span> Home</NavLink>
-                                <NavLink className={({ isActive }) => (isActive ? styles.active : "") + " text-preset-8"} onClick={toggleMenu} to="/destination" end><span className='text-preset-8-bold'>01</span> Destination</NavLink>
-                                <NavLink className={({ isActive }) => (isActive ? styles.active : "") + " text-preset-8"} onClick={toggleMenu} to="/crew" end><span className='text-preset-8-bold'>02</span> Crew</NavLink>
-                                <NavLink className={({ isActive }) => (isActive ? styles.active : "") + " text-preset-8"} onClick={toggleMenu} to="/technology" end><span className='text-preset-8-bold'>03</span> Technology</NavLink>
+                                <NavLink className={({ isActive }) => (isActive ? styles.active : "") + " text-preset-8 blue-300"} onClick={toggleMenu} to="/" end><span className='text-preset-8-bold'>00</span> Home</NavLink>
+                                <NavLink className={({ isActive }) => (isActive ? styles.active : "") + " text-preset-8 blue-300"} onClick={toggleMenu} to="/destination" end><span className='text-preset-8-bold'>01</span> Destination</NavLink>
+                                <NavLink className={({ isActive }) => (isActive ? styles.active : "") + " text-preset-8 blue-300"} onClick={toggleMenu} to="/crew" end><span className='text-preset-8-bold'>02</span> Crew</NavLink>
+                                <NavLink className={({ isActive }) => (isActive ? styles.active : "") + " text-preset-8 blue-300"} onClick={toggleMenu} to="/technology" end><span className='text-preset-8-bold'>03</span> Technology</NavLink>
                             </div>
                         )}
                     </div>
