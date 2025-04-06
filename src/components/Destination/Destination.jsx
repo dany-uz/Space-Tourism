@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from "./Destination.module.css"
 
-export default function Destination({ deviceSize, destinations }) {
+export default function Destination({ destinations }) {
   const [destination, setDestination] = useState(destinations[0]);
   const [activeDestination, setActiveDestination] = useState("Moon");
 
@@ -16,7 +16,7 @@ export default function Destination({ deviceSize, destinations }) {
       <div className={styles.destinationHeader}>
         <h2 className={styles.destinationTitle + " text-preset-5 uppercase barlow-condensed"}><span className='bold'>01</span>Pick your destination</h2>
 
-        <img src={destination.images.webp} alt="Destination" className={styles.destinationImage} width={deviceSize === "mobile" ? "150" : "auto"} />
+        <img src={destination.images.webp} alt="Destination" className={styles.destinationImage} width={150} />
       </div>
 
       <div className={styles.destinationContent + " text-center"}>
