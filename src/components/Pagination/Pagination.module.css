@@ -1,0 +1,20 @@
+.paginationList {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-200);
+    list-style: none;
+}
+
+.paginationItem {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--blue-300);
+    cursor: pointer;
+    opacity: 17.44%;
+}
+
+.paginationItem.active {
+    background-color: var(--white);
+    opacity: 100%;
+}
