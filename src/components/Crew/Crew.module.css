@@ -1,0 +1,73 @@
+#crewMain {
+    height: calc(100dvh - var(--header-height));
+    padding: var(--spacing-300);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#crewMain .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--spacing-300);
+}
+
+.pageTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crewContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-400);
+}
+
+.explanationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+}
+
+.crewExplanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+    padding-top: var(--spacing-500);
+    text-align: center;
+}
+
+.crewExplanation .explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+}
+
+.crewExplanation .explanation .crewRankAndName {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-100);
+}
+
+.crewExplanation .explanation .crewRankAndName h2 {
+    opacity: 50%;
+}
+
+.crewExplanation .explanation p {
+    height: 162px;
+    width: 100%;
+}
+
+.crewPagination {
+    width: 100%;
+    justify-items: center;
+}
