@@ -3,7 +3,7 @@ import styles from "./Destination.module.css"
 
 export default function Destination({ destinations }) {
   const [destination, setDestination] = useState(destinations[0]);
-  const [activeDestination, setActiveDestination] = useState("Moon");
+  const [activeDestination, setActiveDestination] = useState(destinations[0].name);
 
   const changeDestination = (destination) => {
     setDestination(destinations.find(d => d.name === destination));
@@ -14,12 +14,12 @@ export default function Destination({ destinations }) {
     <main id={styles.destinationMain}>
 
       <div className={styles.destinationHeader}>
-        <h2 className={styles.destinationTitle + " text-preset-5 uppercase barlow-condensed"}><span className='bold'>01</span>Pick your destination</h2>
+        <p className={styles.destinationTitle + " text-preset-5 uppercase barlow-condensed"}><span className='bold'>01</span>Pick your destination</p>
 
         <img src={destination.images.webp} alt="Destination" className={styles.destinationImage} width={150} />
       </div>
 
-      <div className={styles.destinationContent + " text-center"}>
+      <div className={styles.destinationContent}>
         <ul id={styles.destinations}>
           {destinations.map((destination, index) => (
             <li
@@ -39,11 +39,11 @@ export default function Destination({ destinations }) {
 
         <div className={styles.destinationStats}>
           <div>
-            <h3 className='text-preset-7 blue-300 uppercase'>Avg. Distance</h3>
+            <h2 className='text-preset-7 blue-300 uppercase'>Avg. Distance</h2>
             <p className='text-preset-6 uppercase'>{destination.distance}</p>
           </div>
           <div>
-            <h3 className='text-preset-7 blue-300 uppercase'>Est. Travel Time</h3>
+            <h2 className='text-preset-7 blue-300 uppercase'>Est. Travel Time</h2>
             <p className='text-preset-6 uppercase'>{destination.travel}</p>
           </div>
         </div>
